@@ -294,7 +294,7 @@ name: S4
 .center[<img src="img/VoltageData.png" height="165">]
 
 - In this lecture, lets assume a 50Hz V<sub>vf</sub> at ADC0 is sampled and converted to an ADC value every 2ms
-- Note that project specifications limits maximum sampling rate to 10kHz and therefore if repeatedly a sample of V<sub>vf</sub> is taken followed by a sample of V<sub>if</sub> then each V<sub>vf</sub> sample will be 0.2ms apart
+- Note that project specifications limits maximum sampling rate to 10kHz and therefore if a sample of V<sub>vf</sub> is taken followed by a sample of V<sub>if</sub> then each V<sub>vf</sub> sample will be 0.2ms apart
  - Alternatively V<sub>vf</sub> can be continuously sampled over a few periods to take samples of V<sub>vf</sub> every 0.1ms  
  - Need zero crossing detector to correctly align the V<sub>if</sub> samples taken after this with the V<sub>vf</sub> samples
 - From the ADC data we can estimate the AC source voltage at i<sup>th</sup> sample point since 
@@ -309,7 +309,7 @@ name: S5
 .center[<img src="img/CurrentData.png" height="165">]
 
 - Similar to V<sub>vf</sub> lets assume a 50Hz V<sub>if</sub> at ADC1 is sampled and converted to an ADC value every 2ms
-- Project specifications limits maximum sampling rate to 10kHz and therefore if repeatedly a sample of V<sub>vf</sub> is taken followed by a sample of V<sub>if</sub> then each V<sub>if</sub> sample will be 0.2ms apart
+- Project specifications limits maximum sampling rate to 10kHz and therefore if a sample of V<sub>vf</sub> is taken followed by a sample of V<sub>if</sub> then each V<sub>if</sub> sample will be 0.2ms apart
  - Alternatively V<sub>if</sub> can be continuously sampled over a few periods to take samples of V<sub>if</sub> every 0.1ms  
  - Need zero crossing detector to correctly align the V<sub>if</sub> samples with the V<sub>vf</sub> samples
 - From the ADC data we can estimate the AC load current at i<sup>th</sup> sample point since 
@@ -322,7 +322,7 @@ name: S6
 
 .center[<img src="img/VnI.png" height="270">]
 
-- When repeatedly a sample of V<sub>vf</sub> is taken followed by a sample of V<sub>if</sub> these samples will be 1ms apart
+- When a sample of V<sub>vf</sub> is taken followed by a sample of V<sub>if</sub> these samples will be 1ms apart
  - This delay can introduce a *perceived* phase-shift (i.e. phase error)  
  - With good signal processing techniques this error can be minimized
 - During the project you are encouraged to investigate and improve on the techniques taught in this lecture
